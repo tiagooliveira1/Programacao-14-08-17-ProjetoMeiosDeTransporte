@@ -14,9 +14,10 @@ public class MainTeste {
 		
 		
 		Trem trem = new Trem();
-		trem.addVagao("vermelho");
-		trem.addVagao("verde");
-		trem.addVagao("rosa");
+		trem.addVagao(114000, "vermelho");
+		trem.addVagao(325222, "verde");
+		trem.addVagao(123123, "rosa");
+		trem.addVagao(321123, "rosa");
 		
 		System.out.println( trem.TotalVagoes() );
 		

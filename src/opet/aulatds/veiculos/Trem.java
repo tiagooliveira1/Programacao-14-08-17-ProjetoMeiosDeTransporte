@@ -13,8 +13,9 @@ public class Trem {
 	public int TotalVagoes() {
 		return this.vagoes.size();
 	}
-	public void addVagao(String cor) {
+	public void addVagao(float capacidade, String cor) {
 		Vagao vag = new Vagao();
+		vag.setCapacidade(capacidade);
 		vag.setCor(cor);
 		vagoes.add(vag);
 	}
