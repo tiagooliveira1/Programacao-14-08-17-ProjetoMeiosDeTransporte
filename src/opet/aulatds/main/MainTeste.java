@@ -11,7 +11,12 @@ public class MainTeste {
 		carro.setCor("vermelho");
 		
 		Carro Segundo_carro = new Carro("vermelho", 2017);
+		
+		
 		Trem trem = new Trem();
+		trem.addVagao();
+		trem.addVagao();
+		trem.addVagao();
 		
 		System.out.println( trem.TotalVagoes() );
 

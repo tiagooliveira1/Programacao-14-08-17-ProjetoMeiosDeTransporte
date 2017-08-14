@@ -1,15 +1,22 @@
 package opet.aulatds.veiculos;
 
+import java.util.ArrayList;
+
 public class Trem {
 
-	private Vagao[] vagoes;
+	private ArrayList<Vagao> vagoes;
 	
 	public Trem() {
-		this.vagoes[1] = new Vagao();
+		this.vagoes = new ArrayList<Vagao>();
+		//this.vagoes[1] = new Vagao();
 		
 	}
 	public int TotalVagoes() {
-		return this.vagoes.length;
+		return this.vagoes.size();
+	}
+	public void addVagao() {
+		Vagao vag = new Vagao();
+		vagoes.add(vag);
 	}
 	
 	
